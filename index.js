@@ -45,7 +45,7 @@ function lose(user, computer) {
     computer_Score.innerHTML = computerScore;
     const userWord = "user".fontsize(3).sub();
     const computerWord = "computer".fontsize(3).sub();
-    result.innerHTML = `${word(user)} ${userWord} loses ${word(computer)} ${computerWord}.You lost it!..`;
+    result.innerHTML = `${word(user)}    ${userWord}     loses   ${word(computer)}   ${computerWord} .You lost it!..`;
     document.getElementById('user').classList.add("red");
     setTimeout(() => document.getElementById('user').classList.remove("red"), 500);
     document.getElementById('computer').classList.add("green");
