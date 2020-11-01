@@ -33,7 +33,7 @@ function win(user, computer) {
     computer_Score.innerHTML = computerScore;
     const userWord = "user".fontsize(3).sub();
     const computerWord = "computer".fontsize(3).sub();
-    result.innerHTML = `${word(user)} ${userWord} beats ${word(computer)} ${computerWord}.You Win!..`;
+    result.innerHTML = `${word(user)} ${userWord}   beats   ${word(computer)} ${computerWord}. You Win!..`;
     document.getElementById('user').classList.add("green");
     setTimeout(() => document.getElementById('user').classList.remove("green"), 500);
     document.getElementById('computer').classList.add("red");
@@ -45,7 +45,7 @@ function lose(user, computer) {
     computer_Score.innerHTML = computerScore;
     const userWord = "user".fontsize(3).sub();
     const computerWord = "computer".fontsize(3).sub();
-    result.innerHTML = `${word(user)}    ${userWord}     loses   ${word(computer)}   ${computerWord} .You lost it!..`;
+    result.innerHTML = `${word(user)} ${userWord}   loses ${word(computer)} ${computerWord} . You lost it!..`;
     document.getElementById('user').classList.add("red");
     setTimeout(() => document.getElementById('user').classList.remove("red"), 500);
     document.getElementById('computer').classList.add("green");
@@ -55,7 +55,7 @@ function lose(user, computer) {
 function draw(user, computer) {
     const userWord = "user".fontsize(3).sub();
     const computerWord = "computer".fontsize(3).sub();
-    result.innerHTML = `${word(user)} ${userWord} equal ${word(computer)} ${computerWord}.It's drw!..`;
+    result.innerHTML = `${word(user)} ${userWord}   equal   ${word(computer)} ${computerWord}. It's draw!..`;
     document.getElementById('user').classList.add("grey");
     document.getElementById('computer').classList.add("grey");
     setTimeout(() => document.getElementById('user').classList.remove("grey"), 500);
